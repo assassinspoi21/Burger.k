@@ -1,3 +1,10 @@
-<html>
-<iframe src="BURGER.html" width="100%" height="200"></iframe>
-</html>
+<!-- index.html -->
+<div id="header"></div>
+
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+</script>
